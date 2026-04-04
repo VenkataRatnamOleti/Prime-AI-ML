@@ -1,8 +1,11 @@
-def is_prime(n):
-    if n<0: return False
-    for i in range(2,n):
-        if not n%i: return False
-    return True
+n = 5
 
-
-print(is_prime(4))
+while True:
+    a = int(input("Guess the Number: "))
+    if a < n:
+        print("Too low")
+    elif a > n:
+        print("Too high")
+    else : 
+        print("Correct!")
+        break
